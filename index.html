@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
-  <head>
-<meta http-equiv="Content-Security-Policy" content="
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="
     default-src 'self'; 
     script-src 'self' 'unsafe-inline' https://www.youtube.com https://drive.google.com https://cdn.jsdelivr.net https://cdn.voiceflow.com https://413xkur4y4m1.github.io; 
     frame-src 'self' https://www.youtube.com https://drive.google.com; 
@@ -9,68 +11,70 @@
     connect-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com; 
     img-src 'self' data:; 
     font-src 'self' https://cdn.jsdelivr.net;
-">
-<title>Chat Widget | Extensions Demo</title>
-    <style>
-      body {
-        background-color: #f9f9f9;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="flat-chat"></div>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="https://cdn.voiceflow.com/widget/bundle.mjs"></script>
-    <script type="module">
-      import {
-        VideoExtension,
-        TimerExtension,
-        FormExtension,
-        MapExtension,
-        FileUploadExtension,
-        KBUploadExtension,
-        DateExtension,
-        ConfettiExtension,
-        FeedbackExtension,
-      } from 'https://413xkur4y4m1.github.io/pagefunctions/extensions.js';
+  ">
+  <title>Chat Widget | Extensions Demo</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="flat-chat"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.voiceflow.com/widget/bundle.mjs"></script>
+  
+  <script type="module">
+    import {
+      VideoExtension,
+      TimerExtension,
+      FormExtension,
+      MapExtension,
+      FileUploadExtension,
+      KBUploadExtension,
+      DateExtension,
+      ConfettiExtension,
+      FeedbackExtension,
+    } from 'https://413xkur4y4m1.github.io/pagefunctions/extensions.js';
 
-      (function (d, t) {
-        var v = d.createElement(t),
+    (function (d, t) {
+      var v = d.createElement(t),
           s = d.getElementsByTagName(t)[0];
-        v.onload = function () {
-          window.voiceflow.chat.load({
-            verify: { projectID: '66a1410da1f31cc7c3337bb3' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'development',
-            user: {
-              name: 'Demo User',
-            },
-            render: {
-              mode: 'embedded',
-              target: document.body,
-            },
-            autostart: false,
-            assistant: {
-              title: 'Legal Copilot',
-              stylesheet: 'https://413xkur4y4m1.github.io/pagefunctions/style.css',
-              extensions: [
-                VideoExtension,
-                TimerExtension,
-                FormExtension,
-                MapExtension,
-                FileUploadExtension,
-                KBUploadExtension,
-                DateExtension,
-                FeedbackExtension,
-              ],
-            },
-          });
-        };
-        v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
-        v.type = 'text/javascript';
-        s.parentNode.insertBefore(v, s);
-      })(document, 'script');
-    </script>
-  </body>
+      v.onload = function () {
+        window.voiceflow.chat.load({
+          verify: { projectID: '66a1410da1f31cc7c3337bb3' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'development',
+          user: {
+            name: 'Demo User',
+          },
+          render: {
+            mode: 'embedded',
+            target: document.body,
+          },
+          autostart: false,
+          assistant: {
+            title: 'Legal Copilot',
+            stylesheet: 'https://413xkur4y4m1.github.io/pagefunctions/style.css',
+            extensions: [
+              VideoExtension,
+              TimerExtension,
+              FormExtension,
+              MapExtension,
+              FileUploadExtension,
+              KBUploadExtension,
+              DateExtension,
+              FeedbackExtension,
+            ],
+          },
+        });
+      };
+      v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+      v.type = 'text/javascript';
+      s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+</body>
 </html>

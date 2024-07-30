@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://www.youtube.com https://drive.google.com https://cdn.jsdelivr.net https://cdn.voiceflow.com https://413xkur4y4m1.github.io; 
-      frame-src 'self' https://www.youtube.com https://drive.google.com; 
-      style-src 'self' 'unsafe-inline' https://413xkur4y4m1.github.io; 
-      connect-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com https://general-runtime.voiceflow.com; 
-      img-src 'self' data: https://cdn.voiceflow.com; 
-      font-src 'self' https://cdn.jsdelivr.net;
-    ">
+  default-src 'self'; 
+  script-src 'self' 'unsafe-inline' https://www.youtube.com https://drive.google.com https://cdn.jsdelivr.net https://cdn.voiceflow.com https://413xkur4y4m1.github.io https://general-runtime.voiceflow.com; 
+  frame-src 'self' https://www.youtube.com https://drive.google.com; 
+  style-src 'self' 'unsafe-inline' https://413xkur4y4m1.github.io https://cdn.voiceflow.com; 
+  connect-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com https://general-runtime.voiceflow.com; 
+  img-src 'self' data: https://cdn.voiceflow.com; 
+  font-src 'self' https://cdn.jsdelivr.net;
+">
     <title>Chat Widget | Extensions Demo</title>
     <style>
       body {
@@ -20,6 +20,9 @@
   </head>
   <body>
     <div id="flat-chat"></div>
+    <span class="c-gMpNkY" aria-describedby="tooltip-1">
+  Albacea
+  <span id="tooltip-1" role="tooltip" class="tooltip">Persona encargada de cumplir las disposiciones expresadas en un testamento.</span>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="https://cdn.voiceflow.com/widget/bundle.mjs"></script>
     <script type="module">

@@ -2,15 +2,18 @@
 <html>
   <head>
 <meta http-equiv="Content-Security-Policy" content="
-  default-src 'self'; 
-  script-src 'self' 'unsafe-inline' https://www.youtube.com https://drive.google.com https://cdn.jsdelivr.net https://cdn.voiceflow.com https://413xkur4y4m1.github.io https://general-runtime.voiceflow.com; 
-  media-src 'self' https://link.voiceflow.fr; 
-  frame-src 'self' https://www.youtube.com https://drive.google.com; 
-  frame-ancestors 'self' https://drive.google.com https://accounts.google.com; 
-  style-src 'self' 'unsafe-inline' https://413xkur4y4m1.github.io https://cdn.voiceflow.com; 
-  connect-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com https://general-runtime.voiceflow.com https://link.voiceflow.fr http://play.google.com; 
-  img-src 'self' data: https://cdn.voiceflow.com https://cm4-production-assets.s3.amazonaws.com; 
-  font-src 'self' https://cdn.jsdelivr.net;
+  default-src 'none'; 
+  script-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com https://general-runtime.voiceflow.com; 
+  style-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com; 
+  img-src 'self' data: https://cdn.voiceflow.com; 
+  connect-src 'self' https://cdn.jsdelivr.net https://cdn.voiceflow.com https://general-runtime.voiceflow.com; 
+  font-src 'self' https://cdn.jsdelivr.net; 
+  media-src 'self'; 
+  frame-src 'self'; 
+  frame-ancestors 'self'; 
+  object-src 'none'; 
+  base-uri 'self'; 
+  form-action 'self';
 ">
     <title>Chat Widget | Extensions Demo</title>
     <style>

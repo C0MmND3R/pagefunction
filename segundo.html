@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiceflow Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Invertir horizontalmente solo los elementos específicos */
+        .vfrc-assistant-info--title, .vfrc-assistant-info--description,
+        .vfrc-chat--session-time, .vfrc-message p,
+        .vfrc-timestamp, .vfrc-user-response--row, 
+        .vfrc-message--chat {
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body>
+    <div id="blank-state"></div>
+    <script>
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                    verify: {
+                        projectID: '66577deb54a08f549fb1e698',
+                    },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    render: {
+                        mode: 'embedded',
+                        target: document.body, 
+                    },
+                    autostart: false,
+                    assistant: {
+                        title: "Chat Assistant",
+                        stylesheet: 'style.css'
+                    }
+                });
+            };
+            v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+            v.type = 'text/javascript';
+            s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.c-Mmsau > .c-bwlaNm, .c-Mmsau > .c-gSBsRr {
+    position: relative;
+    right: 10px; /* Reducido de 20px a 10px para moverlo más a la derecha */
+    left: auto;
+    max-width: 70%;
+    align-self: flex-end;
+    margin-left: 60px; /* Añadido para dar espacio al avatar */
+}
+.vfrc-system-response--actions.c-iBVlvN {
+    transform: scaleX(-1); /* Invierte visualmente el contenedor de acciones */
+}
+
+.vfrc-system-response--actions.c-iBVlvN button {
+    transform: scaleX(1); /* Restaura la dirección normal del texto en los botones */
+}
+.c-Mmsau > .c-iBVlvN {
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones al extremo derecho */
+    padding-left: var(--space-5); /* Espacio a la izquierda para separar del borde */
+}
+
+.c-Mmsau > .c-iBVlvN button {
+    margin-left: var(--space-2); /* Espacio entre los botones */
+}
+
+.c-PJLV-gJqBfM-from-user {
+    position: relative; /* Reducido de 20px a 10px para moverlo más a la izquierda */
+    right: 700px;
+ /* Añadido para dar espacio al avatar */
+}
+    .c-Mmsau > .c-bwlaNm .c-kIbiaN, .c-Mmsau > .c-gSBsRr .c-kIbiaN {
+        position: absolute;
+        right: 5px; /* Ajusta según sea necesario */
+        top: 0;
+    }
+    
+    .c-PJLV-gJqBfM-from-user + .c-kIbiaN {
+        position: relative;
+        left: -50px; /* Ajusta según sea necesario */
+        top: 0;
+    }

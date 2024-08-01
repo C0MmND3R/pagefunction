@@ -10,24 +10,37 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      font-family: Arial, sans-serif;
     }
     #flat-chat {
-      height: 90vh;
-      width: 80%;
+      height: 98vh;
+      width: 98vw;
       overflow-y: auto;
       border: 1px solid #ccc;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     @media (max-width: 768px) {
       #flat-chat {
-        width: 95%;
-        height: 80vh;
+        height: 98vh;
+        width: 98vw;
       }
     }
     @media (max-width: 480px) {
       #flat-chat {
-        width: 100%;
-        height: 75vh;
+        height: 98vh;
+        width: 98vw;
+      }
+      .chat-message {
+        font-size: 14px;
+        padding: 8px;
+      }
+      .chat-header {
+        font-size: 16px;
+        padding: 10px;
+      }
+      .chat-buttons {
+        font-size: 14px;
+        padding: 5px;
       }
     }
   </style>
